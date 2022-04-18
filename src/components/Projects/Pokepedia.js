@@ -20,8 +20,8 @@ export default function Pokepedia() {
                         to get more comfortable with the Pokémon franchise.
                     </p>
                     <div className="flex mt-10 justify-evenly font-medium text-yellow-200">
-                        <a href="https://pokepediadc.surge.sh/" target="__blank" className="transition ease-in-out hover:scale-110 flex border w-1/5 justify-center rounded border-yellow-200">Live Link</a>
-                        <a href="https://github.com/technotobes/pokemonWebsite" target="__blank" className="transition ease-in-out hover:scale-110 flex border w-1/5 justify-center rounded border-yellow-200" >GitHub</a>
+                        <a href="https://pokepediadc.surge.sh/" target="__blank" className="transition ease-in-out hover:scale-110 flex border w-2/5 sm:w-1/5 justify-center rounded border-yellow-200">Live Link</a>
+                        <a href="https://github.com/technotobes/pokemonWebsite" target="__blank" className="transition ease-in-out hover:scale-110 flex border w-2/5 sm:w-1/5 justify-center rounded border-yellow-200" >GitHub</a>
                     </div>
                     <h2 className="mt-10 font-medium text-yellow-200">TECHNOLOGIES USED</h2>
                     <div className="flex flex-wrap">
