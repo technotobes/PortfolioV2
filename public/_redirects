@@ -1,6 +1,6 @@
 [[redirects]]
-  from = "tobyhoang.com"
-  to = "www.tobyhoang.com"
-  status = 301
-  force = false
-  query = {path = ":path"}
+from = "https://tobyhoang.com"
+to = "https://www.tobyhoang.com"
+status = 301
+force = false
+query = {path = ":path"}
