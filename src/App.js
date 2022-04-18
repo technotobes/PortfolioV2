@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom"
+import { BaseLayout, ProjectsLayout } from "./Layouts";
+
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills"
+import Pawster from "./components/Projects/Pawster";
+import Lefties from "./components/Projects/Lefties";
+import Cams from "./components/Projects/Cams";
+import Pokepedia from "./components/Projects/Pokepedia";
+
+import 'animate.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Routes>
+          <Route path="/" element={<BaseLayout />}>
+            <Route path="/" element={<AboutMe />}/>
+            <Route path="/skills" element={<Skills />}/>
+            <Route path="/projects" element={<ProjectsLayout />}>
+              <Route path="/projects/Pawster" element={<Pawster />}/>
+              <Route path="/projects/Lefties" element={<Lefties />}/>
+              <Route path="/projects/Cams" element={<Cams />}/>
+              <Route path="/projects/Pokepedia" element={<Pokepedia />}/>
+            </Route>
+          </Route>
+      </Routes>
   );
 }
 
